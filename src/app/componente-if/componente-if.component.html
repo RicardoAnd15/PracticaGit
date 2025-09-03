@@ -1,0 +1,11 @@
+<div class="container mt-5 mb-3 text-center">
+    <h2>Estatus de autenticación</h2>
+
+    @if (autenticado) {
+        <p class="text-success mb-3">Estas autenticado</p>
+    }@else {
+        <p class="text-danger mb-3">No estas autenticado</p>
+    }
+
+    <button class="btn btn-info" (click)="alternarAutenticacion()">Autenticar</button>
+</div>
